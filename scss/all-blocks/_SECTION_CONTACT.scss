@@ -1,0 +1,57 @@
+.contact{
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &>h1{
+        font-family: Ibarra Real Nova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 42p;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+        align-items: center;
+        
+    }
+    &__befor{
+        border-top: 1px solid black;
+        width: 1050px;
+        margin-right: 50px;
+        margin-left: 50px;
+        display: flex;
+    }
+    &>a{
+        border: 1px solid #33323D;
+        box-sizing: border-box;
+        font-family: Public Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        text-decoration: none;
+        padding: 15px 32px;
+        align-items: center;
+    }
+    
+}
+@media only screen and (max-width: 960px){
+    .contact__befor{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 728px){
+    .contact{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 40%;
+        &__befor{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.navbar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .toggle{
+        width: 24px;
+        height: 24px;
+        display: none;
+        z-index: +2;
+        align-items: center;
+    }
+    .nav__menu{
+        display: flex;
+        &__item{
+           
+            list-style: none;
+            padding-left: 25px;
+            &>a{
+                text-decoration: none;
+                font-family: Public Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #33323D;
+
+                
+                &:hover{
+                    color: #5FB4A2;
+                }
+                &:active{
+                    color: #5FB4A2;
+                }
+            }
+
+
+            
+        }
+    }
+}
+@media only screen and (max-width: 960px){
+
+}
+@media only screen and (max-width: 728px){
+    .navbar{
+        position: relative;
+        .toggle{
+            &:hover{
+                cursor: pointer;
+
+            }
+            @include diplayFlexSetter(space-evenly,center);
+            position: relative;
+            flex-direction: column;
+            &::after, &::before{
+                content: "";
+            }
+            &::after, &::before, &>span{
+                width: 100%;
+                height: 2px;
+                background-color: black;
+            }
+          
+            &--active{
+                  
+                &::after,  &::before{
+                    position: absolute;
+                    background-color:black;
+                    
+                }
+                &::after{
+                    top: 50%;
+                    transform: translateY(-50%)rotate(45deg);
+                }
+                &>span{
+                    opacity: 0;
+                }
+                &::before{
+                    bottom: 50%;
+                    transform: translateY(50%)rotate(-45deg);
+                }
+            }
+        }
+        &__nav{
+            z-index: +1;
+            position: absolute;
+            flex-direction: column;
+            right: 0;
+            justify-content:center;
+            top: 40px;
+            .nav__menu{ 
+                padding: 30px 40px;
+                margin-right: 5px;
+                background: #1B262F;
+                flex-direction: column;
+                &__item>a{
+                    text-align: center;
+                    align-items: center;
+                    color: white;
+                
+                }
+            }
+
+        
+        }
+    }
+}
+
+
+  

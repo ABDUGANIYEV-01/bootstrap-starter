@@ -1,0 +1,73 @@
+.abaut{
+    margin-bottom: 270px;
+    background-image: url(../../img/23.png);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    &__item{
+      position: absolute;
+       background-color: white;
+        width: 35%;
+        padding-right: 20px;
+        padding-left: 20px;
+        bottom: 0;
+        left: 0;
+        &>h1{
+            font-family: Ibarra Real Nova;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: -0.446429px;
+            color: #33323D;
+        }
+      &__btn{
+          display: flex;
+          align-items: center;
+        &__img{
+            align-items: center;
+            background: #000000;
+            mix-blend-mode: normal;
+            opacity: 0.9;
+            padding: 17px 17px;
+        }
+        &__text{
+            background: #203A4C;
+            align-items: center;
+            padding: 22px 32px;
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+      }
+
+    }
+}
+@media only screen and (max-width: 960px){
+    .abaut{
+        background-image: url(./../../img/13.png)no-repeat;
+        width: 100%;
+
+        &__item{
+            width: 70%;
+        }
+    }
+}
+@media only screen and (max-width: 728px){
+    .abaut{
+        background-image: url(./../../img/66.png)no-repeat;
+        width: 100%;
+
+        &__item{
+            bottom: -200px;
+            width: 100%;
+        }
+    }
+}

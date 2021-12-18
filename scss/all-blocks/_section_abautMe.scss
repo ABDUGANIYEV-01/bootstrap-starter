@@ -1,0 +1,67 @@
+.abautme{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text{
+        border-bottom: 1px solid #33323D ;
+        border-top: 1px solid #33323D ;
+        width: 40%;
+        padding: 65px 0;
+        
+
+        &>h1{
+            margin: 0;
+            padding: 0;
+            font-family: Ibarra Real Nova;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+             line-height: 42px;
+            letter-spacing: -0.357143px;
+             color: #33323D;
+        }
+        &>p{
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 30px;
+            color: #33323D;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            padding: 50px 0px;
+        }
+        &>a{
+            text-decoration: none;
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #33323D;
+            border: 1px solid #33323D;
+            box-sizing: border-box;
+            padding: 15px 32px;
+        }
+    }
+}
+@media only screen and (max-width: 1000px){
+    .abautme__text{
+        width: 35%;
+        &>p{
+            padding: 25px 0px;
+        }
+    }
+}
+@media only screen and (max-width: 728px){
+    .abautme{
+        flex-direction: column;
+        &__text{
+            width: 80%;
+        }
+    }
+}
